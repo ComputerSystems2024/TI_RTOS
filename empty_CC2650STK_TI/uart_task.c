@@ -66,7 +66,7 @@ Void serialTask(UArg arg0, UArg arg1) {
 
       // Let's send the current state
       sprintf(buff,"Current state: %1d\n\r",programState);
-      UART_write(uart, buff, strlen(buff);
+      UART_write(uart, buff, strlen(buff));
       // Let's sleep for one second
       Task_sleep(1000000 / Clock_tickPeriod);
    }
